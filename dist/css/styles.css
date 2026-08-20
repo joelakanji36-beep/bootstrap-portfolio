@@ -11732,3 +11732,68 @@ html {
     left: -2vw;
   }
 }
+.navbar .nav-link {
+  position: relative;
+  display: inline-block;
+  transition: transform 0.25s ease, 
+              color 0.25s ease,
+              text-shadow 0.25s ease;
+}
+
+.navbar .nav-link:hover {
+  color: #6f42c1;
+  transform: translateY(-5px) scale(1.12);
+  text-shadow: 0 4px 10px rgba(111, 66, 193, 0.35);
+}
+.initials-logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  background: linear-gradient(135deg, #6f42c1, #ff6b6b);
+  color: white;
+  
+  font-weight: bold;
+  font-size: 18px;
+  text-decoration: none;
+
+  animation: swipe 2s ease-in-out infinite;
+  
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes swipe {
+  0%, 100% {
+      transform: translateX(0);
+  }
+
+  50% {
+      transform: translateX(12px);
+  }
+}
+footer a {
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+footer a:hover {
+  transform: translateY(-5px) scale(1.1);
+  color: #6f42c1;
+  text-shadow: 0 4px 10px rgba(111, 66, 193, 0.3);
+}
+.social-icons a {
+  display: inline-block;
+  transition: transform 0.3s ease,
+              color 0.3s ease,
+              text-shadow 0.3s ease;
+}
+
+.social-icons a:hover {
+  transform: translateY(-7px) scale(1.25);
+  color: #6f42c1;
+  text-shadow: 0 5px 15px rgba(111, 66, 193, 0.4);
+}
